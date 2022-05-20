@@ -1,0 +1,277 @@
+/* CSS para home */
+
+
+
+main{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background-color: #E5E5E5;
+}
+
+.caja {
+    vertical-align: baseline;
+    position: absolute;
+    left: 10%;
+    right: 37.43%;
+    top: 5%;
+    bottom: 0%;
+}
+
+.muneco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 10%;
+    top: 283px;
+}
+
+.sinMensaje{
+    position: absolute;
+width: 336px;
+height: 58px;
+left: 10%;
+top: 60%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 120%;
+/* or 29px */
+
+text-align: center;
+
+/* Gray/gray-500 */
+
+color: #343A40;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 16px 0px;
+}
+
+.ingreseText{
+    position: absolute;
+width: 336px;
+height: 58px;
+left: 10%;
+top: 70%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 16px 0px;
+}
+
+.inputt{
+    display: block;
+    border: none;
+    position: absolute;
+    background: #E5E5E5;
+    width: 557px;
+    height: 650px;
+    left: 240px;
+    top: 168px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+/* identical to box height, or 48px */
+
+
+/* Dark blue/dark-blue-300 */
+
+color: #0A3871;
+}
+
+.aviso{
+    position: absolute;
+    
+    
+    left: 80px;
+    top: 830px;
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+/* identical to box height, or 18px */
+
+
+/* Gray/gray-400 */
+
+    color: #495057;
+
+    opacity: 0.8;
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.inputt2{
+    display: absolute;
+    border: none;
+    position: absolute;
+    background: #FFFFFF;
+    width: 350px;
+    height: 700px;
+    left: 37px;
+    top: 50px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+/* identical to box height, or 48px */
+
+
+/* Dark blue/dark-blue-300 */
+
+color: #0A3871;
+}
+
+.encriptar{
+    position: absolute;
+    width: 288px;
+    height: 19px;
+    left: 38px;
+    top: 870px;
+
+
+    /* Dark blue/dark-blue-300 */
+
+
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+
+    
+}
+
+.desencriptar{
+    position: absolute;
+    width: 288px;
+    height: 19px;
+    left: 450px;
+    top: 870px;;
+
+
+    /* Dark blue/dark-blue-300 */
+
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+
+    
+}
+
+.copiar{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.copiar a{
+    position: absolute;
+    width: 288px;
+    height: 19px;
+    left: 38px;
+    top: 830px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+/* Dark blue/dark-blue-300 
+    color: #0A3871;*/
+/* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 8px;
+}
+
+/* RESPONSIVE: Indica que si estas en una pantalla de maximo 480 va a tomar las configuraciones que definamos */
+@media screen and (max-width:375px) {
+    
+    main{
+        position: relative;
+        width: 100%;
+        height: 933px;
+        background: #F3F5FC;
+    }
+
+    .ingreseText, .inputt, .inputt2, .desencriptar, .copiar {
+        position: flex;
+    }
+
+    .muneco{
+        display: none;
+    }
+
+    .encriptar, .desencriptar{
+        display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 100%;
+height: 67px;
+    
+}
+}
